@@ -1,0 +1,90 @@
+<% include layout %>
+<head>
+   <style>
+     .strong1{
+     	font-size: 25;
+     	font-style: italic ;
+     	text-decoration: underline;
+     }
+    
+   </style>
+</head>
+<body>
+  <div>
+    <form  class="form-horizontal col-lg-offset-4" method='POST' action='/appointment/re_schedule_an_appointment'>
+  <fieldset >
+   
+    <div class="form-group">
+
+
+    <div class="form-group">
+      <div class="col-lg-6">
+        <input class="form-control" name="mobile" id="inputFirstName" autofocus required placeholder="Enter Registered Mobile Number" type="number">
+      </div>
+    </div>
+
+    
+    <div class="form-group">
+      <div class="col-lg-6">
+        <select class="form-control" required name="location">
+          <option value="#">Select Location</option>
+          <option value="FallsChurch">FallsChurch</option>
+		  <option value="New York">New York</option>
+		  <option value="LosAngels">LosAngels</option>
+		  <option value="WashingtonDC">WashingtonDC</option>
+		  <option value="Chicago">Chicago</option>
+		  <option value="Dallas">Dallas</option>
+        </select>   
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-6 col-lg-offset-0"></br>
+        Date:<input  type="date" name="date" max="2017-09-30"
+				min="2017-08-01" required placeholder="Appointment Date" />
+
+	            <select name="time" required>
+					         <option value="#">Time</option>
+					         <option value="10:00 AM">10:00 AM</option>
+					         <option value="10:30 AM">10:30 AM</option>
+					         <option value="11:00 AM">11:00 AM</option>
+					         <option value="11:30 AM">11:30 AM</option>
+					         <option value="12:00 PM">12:00 PM</option>
+					         <option value="12:30 PM">12:30 PM</option>
+					         <option value="6:00 PM">6:00 PM</option>
+					         <option value="6:30 PM">6:30 PM</option>
+					         <option value="7:00 PM">7:00 PM</option>
+					         <option value="7:30 PM">7:30 PM</option>
+					         <option value="8:00 PM">8:00 PM</option>
+					         <option value="8:30 PM">8:30 PM</option>
+					</select>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-6 col-lg-offset-0"></br>
+        <select name="doctor" required >
+			                 <option value="Null">Consult Specialist</option>
+			                 <option value="Dr.Narender-Psychologist">Dr.Narender-Psychologist</option>
+			                  <option value="Dr.Raja-ENT Specialist">Dr.Raja-ENT Specialist</option>
+			                   <option value="Dr.Siva-Gynaecologist">Dr.Siva-Gynaecologist</option>
+			                    <option value="Dr.Divya-Dental Specialist">Dr.Divya-Dental Specialist</option>
+			                     <option value="Dr.Kaniskar-General Physician">Dr.Kaniskar-General Physician</option>
+			                      <option value="Dr.Suresh-Cardiologist">Dr.Suresh-Cardiologist</option>
+								  
+			          </select>
+
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-lg-6 col-lg-offset-0"></br>
+        <a class="btn btn-secondary" href="/manubolu_hospitals/home">Back</a>
+        <button type="submit" class="btn btn-primary">Re-Schedule Appointment</button>
+        <button type="reset" class="btn btn-default">Reset</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+  </div>
+
+</body>

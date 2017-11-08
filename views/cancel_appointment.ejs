@@ -1,0 +1,37 @@
+<% include layout %>
+<head>
+   <style>
+     .strong1{
+     	font-size: 25;
+     	font-style: italic ;
+     	text-decoration: underline;
+     }
+    
+   </style>
+</head>
+<body>
+  <div>
+    <form  class="form-horizontal col-lg-offset-4" method='POST' action='/appointment/cancel_an_appointment'>
+  <fieldset >
+    
+    <div class="form-group">
+
+      <div class="col-lg-6">
+        <input class="form-control" name="mobile" id="inputFirstName"  autofocus required placeholder="Enter Your Registered Mobile Number" type="number">
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <div class="col-lg-6 col-lg-offset-0"></br>
+        <a class="btn btn-secondary" href="/manubolu_hospitals/home">Back</a>
+        <button type="submit" class="btn btn-primary">Cancel Appointment</button>
+        <button type="reset" class="btn btn-default">Reset</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+  </div>
+
+</body>

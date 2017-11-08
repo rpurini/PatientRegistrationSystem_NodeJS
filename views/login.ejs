@@ -1,0 +1,55 @@
+<!doctype>
+
+<html>
+<head>
+  <title>Manubolu Hospitals || Login</title>
+  
+    <link href="../../css/styles.css" rel="stylesheet" />
+    <link href="../../css/bootstrap.css" rel="stylesheet" />
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" />
+     <link href="../../js/bootstrap.min.js" rel="stylesheet" />
+     <script src="../../js/jquery-3.2.1.js"></script>
+     
+     <style>
+     strong{
+      font-size: 25;
+      font-style: italic ;
+      text-decoration: underline;
+     }
+     </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Manubolu Hospitals </a>
+    </div>
+</div>
+</nav>
+
+<form class="form-horizontal col-lg-offset-4" method="POST", action="/users/login">
+  <fieldset>
+    <strong>User Login</strong>
+    <div class="form-group">
+      <div class="col-lg-5">
+        <input class="form-control" id="inputEmail" name="email" autofocus required placeholder="Email" type="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-5">
+        <input class="form-control" id="inputPassword" name="password" required placeholder="Password" type="password">  <br>   
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-0">
+        <button type="reset" class="btn btn-default">Reset</button>
+        <button type="submit" class="btn btn-primary">Sign In</button> &nbsp Or <a class="btn btn-success" href="/users/signup">Sign Up</a>
+      </div>
+    </div>
+  </fieldset>
+</form>

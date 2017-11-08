@@ -1,0 +1,63 @@
+<% include layout %>
+<head>
+  <style>
+    .div1{
+    	width:200px;
+    	height: 50px;
+    	border:2px solid white	;
+    	text-align: center;
+    	padding:5;
+    }
+
+    img{
+        height: 180;
+        width:100%;
+    }
+
+    #heading{
+        font-family: Jazz Let;
+        font-style: oblique;
+    }
+
+  </style>
+  <script>
+        $(document).ready(function(){
+          $('.bxslider').bxSlider({
+                    auto:true
+          });
+        });
+  </script>
+</head>
+<body>
+<h1 id="heading" align="center">WELCOME TO MANUBOLU HOSPITALS<h1>
+
+<div align="center" class="div">
+			<div class="div1">
+                <a href="/appointment/make_an_appointment" class="btn btn-primary">Make an  Appointment</a>
+			</div>
+			<div class="div1">
+                <a href="/appointment/view_an_appointment" class="btn btn-info">View an Appointment</a>
+			</div>
+			<div class="div1">
+                <a href="/appointment/reschedule_an_appointment" class="btn btn-success">Re-Schedule Appointment</a>
+			</div>
+			<div class="div1">
+                <a href="/appointment/cancel_an_appointment" class="btn btn-danger">Cancel an  Appointment</a>
+			</div>
+		   
+</div>
+<div>
+     <ul class="bxslider">
+              <li><img src="../../images/pic7.jpg" /></li>
+              <li><img src="../../images/pic8.jpg"  /></li>
+              <li><img src="../../images/pic1.jpg" /></li>
+              <li><img src="../../images/pic2.jpg"  /></li>
+              <li><img src="../../images/pic3.jpg" /></li>
+              <li><img src="../../images/pic4.jpg"  /></li>
+              <li><img src="../../images/pic5.jpg" /></li>
+              <li><img src="../../images/pic6.jpg"  /></li>
+              
+   </ul>
+</div>
+
+</body>
